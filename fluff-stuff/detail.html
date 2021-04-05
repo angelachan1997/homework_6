@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Fluff Stuff | Product Details</title>
+</head>
+<body>
+    <header>
+        <div class="header-links">
+            <nav>
+                <ul>
+                    <li class="header-navlink"><a href="home.html">Home</a></li>
+                    <li class="header-navlink"><a href="products.html">Our Products</a></li>
+                    <li class="header-navlink"><a href="#">Our Story</a></li>
+                    <li class="header-navlink"><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-logo-box">
+            <a href="home.html"><img class="site-logo" src="img/site-logo.png" alt="fluff-stuff"/></a>
+        </div>
+
+        <div class="header-icons">
+            <ul>
+                <li class="header-navlink"><a href="#"><img class="navicon" src="img/search.png" alt="search-icon"/></a></li>
+                <li class="header-navlink"><a href="cart.html"><img class="navicon" src="img/cart.png" alt="cart-icon" />(<span id="item-count">0</span>)</a></li>
+                <li class="header-navlink"><a href="#"><img class="navicon" src="img/user.png" alt="user-icon" /></a></li>
+            </ul>
+            
+        </div>      
+    
+   
+    </header>
+    
+    <main>
+        <div class="user-path" style="padding:2rem 15rem">
+            <a href="home.html">Home</a>　>　<a href="products.html">Products</a>　>　<span class="user-path-current">Magic Sleep Pillow</span>
+        </div>
+
+        <section class="product-detail-section">
+            <div class="product-detail-left-col">
+                <div class="pd-thumbnails">
+                    <img class="pd-thumbnail" src="img/pillows/6.jpeg" alt="thumbnail"/>
+                    <img class="pd-thumbnail" src="img/pillows/2.jpeg" alt="thumbnail"/>
+                    <img class="pd-thumbnail" src="img/pillows/1.jpeg" alt="thumbnail"/>
+                    <img class="pd-thumbnail" src="img/pillows/10.jpeg" alt="thumbnail"/>
+                </div>
+                <div class="pd-main-img-container">
+                    <img class="pd-main-img" src="img/pillows/1.jpeg" alt="productimage">
+                </div>
+            </div>
+
+
+            <div class="product-detail-right-col">
+
+                <div class="pd-title">
+                    <p class="pd-title-cat">Bed Pillow</p>
+                    <p class="pd-title-name">Magic Sleep Pillow</p>
+                    <p class="pd-title-price">$30</p>
+                </div>
+
+                <div class="pd-selection-container">
+                    <div class="pd-selection">
+                        <div class="pd-selection-title">
+                            <div class="pds-title-num">1</div>
+                            <span class="pds-title-type">Select A Color</span>
+                            <span class="pds-title-icon"><img class="arrow-up" src="img/arrow-up.png" alt="arrow-icon" /></span>
+                        </div>
+
+                        <div class="pd-selection-content color-selection">
+                            <div class="pd-selection-option">
+                                <img class="pds-option-img" src="img/opt-1.png" alt="pillow-color"/>
+                                <p class="pds-option-name">After School Special</p>
+                            </div>
+                            <div class="pd-selection-option">
+                                <img class="pds-option-img" src="img/opt-2.png" alt="pillow-color"/>
+                                <p class="pds-option-name">Morning Haze</p>
+                            </div>
+                            <div class="pd-selection-option">
+                                <img class="pds-option-img" src="img/opt-3.png" alt="pillow-color"/>
+                                <p class="pds-option-name">Cozy Denim</p>
+                            </div>
+                            <div class="pd-selection-option">
+                                <img class="pds-option-img" src="img/opt-4.png" alt="pillow-color"/>
+                                <p class="pds-option-name">Rainy Day</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="pd-selection">
+                        <div class="pd-selection-title">
+                            <div class="pds-title-num">2</div>
+                            <span class="pds-title-type">Select A Filling</span>
+                            <span class="pds-title-icon"><img class="arrow-up" src="img/arrow-up.png" alt="arrow-icon" /></span>
+                        </div>
+
+                        <div class="pd-selection-content filling-selection">
+                            <div class="pd-selection-option">
+                                <img class="pds-option-img" src="img/mat-1.jpeg" alt="pillow-color"/>
+                                <p class="pds-option-name">Duck Down</p>
+                            </div>
+                            <div class="pd-selection-option">
+                                <img class="pds-option-img" src="img/mat-2.jpeg" alt="pillow-color"/>
+                                <p class="pds-option-name">Memory Foam</p>
+                            </div>
+                            <div class="pd-selection-option">
+                                <img class="pds-option-img" src="img/mat-3.jpeg" alt="pillow-color"/>
+                                <p class="pds-option-name">Hypoallergenic
+                                    Poly-blend</p>
+                            </div>
+                        
+                            <a class="minor-text" href="#filling">(See Filling Descriptions)</a> 
+                        </div>
+
+                        <div class="pd-confirmation">
+                            <div class="pd-conf-info">
+                                <p class="info-label"><strong>Color:</strong> <span id="seleted-color"> - </span></p>
+                                <p class="info-label"><strong>Filling:</strong> <span id="selected-filling"> - </span></p>
+                            </div>
+
+                            <div class="pd-conf-quantity">
+                                <p class="info-label"><strong>Quantity:</strong></p>
+                                <div  class="info-quantity-box">
+                                    <button class="quant-btn" onclick="minus()">-</button>
+                                    <p class="quant-num">0</p>
+                                    <button class="quant-btn" onclick="add()">+</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="total-price">
+                            <div class="info-label"><strong>Total Price: </strong></div>
+                            <div class="total-price-num quant-num"> $ <span id="price">0</span></div>
+                        </div>
+
+                    </div>     
+                </div>
+
+                <div class="add-cart">  
+                    <a class="btn add-cart-btn" onclick="addToCart()">Add to cart</a>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="homepage-break">
+
+        <section id="filling" class="main-section filling-option">
+            <h1 class="section-title u-margin-large">Your filling options</h1>
+            <div class="filling-box">
+                <div class="arrow-left"></div>
+                <div class="filling-description">
+                    <div class="filling-img"></div>
+                    <img class="filling-img1" src="img/filling-1.jpeg" alt="duckdown">
+                    <div class="filling-text">
+                        <span class="filling-text_title">Duck down</span>
+                        <p class="filling-text_rec">BEST FOR: Couch/Bed</p>
+                        <p class="filling-text_detail">Down is the light fluffy coating found beneath the feathers of ducks and geese. ... Down creates warmth through a process called 'lofting'. Down clusters expand or loft to fill space and trap tiny pockets of air within their filaments to create thousands of insulating pockets.</p>
+    
+                    </div>
+                </div>
+                <div class="arrow-right"></div>
+            </div>
+         
+            <a href="#" class="btn u-margin-large" style="margin:auto;">Learn more</a>
+        </section>
+
+
+        <hr class="homepage-break">
+
+        <section class="view-similar-section" style="padding:2rem 15rem; margin-bottom: 6rem">
+            <h1 class="product-title">View Similar Items</h1>
+            <div class="similar-imgs">
+                <img class="similar-thumbnail" src="img/pillows/4.jpeg" alt="similar-pillow"/>
+                <img class="similar-thumbnail" src="img/pillows/2.jpeg" alt="similar-pillow"/>
+                <img class="similar-thumbnail" src="img/pillows/1.jpeg" alt="similar-pillow"/>
+                <img class="similar-thumbnail" src="img/pillows/8.jpeg" alt="similar-pillow"/>
+                <img class="similar-thumbnail" src="img/pillows/6.jpeg" alt="similar-pillow"/>
+                <img class="similar-thumbnail" src="img/pillows/10.jpeg" alt="similar-pillow"/>
+                <img class="similar-thumbnail" src="img/pillows/5.jpeg" alt="similar-pillow"/>
+
+
+            </div>
+        </section>
+
+
+    </main>
+    
+
+    <footer>
+        <div class="row">
+            <div class="col-1-of-2 footer-column">
+              <span class="footer-title">We're here to help</span>
+              <ul class="footer-links">
+                  <li class="footer-link"><a href="#">Customer service</a></li>
+                  <li class="footer-link"><a href="#">Track your order</a></li>
+                  <li class="footer-link"><a href="#">Returns</a></li>
+                  <li class="footer-link"><a href="#">Shipping information</a></li>
+              </ul>
+            </div>
+            <div class="col-1-of-2 footer-column">
+                <span class="footer-title">Contact us</span>
+                <ul class="footer-links">
+                    <li class="footer-link">412-000-0030</li>
+                    <li class="footer-link">567 N Craig St, Pittsburgh, PA, 15112</li>
+                    <li class="footer-link">greatpillow@fluff.com</li>
+                </ul>
+                <input type="email" placeholder="Enter your email" />
+            </div>
+        </div>
+    </footer>
+
+    <script src="selection.js"></script>
+    <script src="addCart.js"></script>
+</body>
+</html>

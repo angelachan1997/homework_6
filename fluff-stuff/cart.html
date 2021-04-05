@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Fluff Stuff</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-links">
+            <nav>
+                <ul>
+                    <li class="header-navlink"><a href="home.html">Home</a></li>
+                    <li class="header-navlink"><a href="products.html">Our Products</a></li>
+                    <li class="header-navlink"><a href="#">Our Story</a></li>
+                    <li class="header-navlink"><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-logo-box">
+            <a href="#"><img class="site-logo" src="img/site-logo.png" alt="fluff-stuff"/></a>
+        </div>
+
+        <div class="header-icons">
+            <ul>
+                <li class="header-navlink"><a href="#"><img class="navicon" src="img/search.png" alt="search-icon"/></a></li>
+                <li class="header-navlink"><a href="products.html"><img class="navicon" src="img/cart.png" alt="cart-icon" />(<span id="item-count">0</span>)</a></li>
+                <li class="header-navlink"><a href="#"><img class="navicon" src="img/user.png" alt="user-icon" /></a></li>
+            </ul>
+            
+        </div>      
+    </header>
+    
+
+    <main>
+        
+        <div class="user-path" style="padding:2rem 15rem">
+            <a href="home.html">Home</a>　>　<span class="user-path-current">My Shopping Cart</span>
+        </div>
+
+        <section class="shopping-cart-page">
+
+            <div class="shopping-cart-col">
+                <div class="cart-header">
+                    <h1 class="shopping-cart-title">
+                        My Shopping Cart
+                        <span class="shopping-cart-item-num"><strong>1</strong> item</span>
+                    </h1>
+                </div>
+                
+
+                <div class="shopping-cart-item-detail">
+                    <div class="u-flex-row">
+                        <div class="item-detail-image">
+                            <img class="item-detail-image" src="img/pillows/8.jpeg" alt="cart-item-pic"/>
+                        </div>
+
+                        <div class="item-detail-info">
+                            <h2 class="item-detail-name">Magic Sleep Pillow</h2>
+                            <div>
+                                <p class="info-label"><strong>Color:</strong> After School Special</p>
+                                <p class="info-label"><strong>Filling:</strong> Memory Foam</p>
+                            </div>
+                            <div class="item-links">
+                                <a href="#">update</a>
+                                <a href="#">remove</a>
+                            </div>
+                        </div>
+                    </div>
+                       
+
+                    <div class="item-detail-quantprice">
+                        <div class="">
+                            <p class="info-label"><strong>Quantity:</strong></p>
+                            <div  class="info-quantity-box">
+                                <button class="quant-btn">-</button>
+                                <p class="quant-num">2</p>
+                                <button class="quant-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="total-price">
+                            <div class="info-label"><strong>Total Price: </strong></div>
+                            <div class="total-price-num quant-num"> $60</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="check-out-col u-flex-col">
+                <h1 class="shopping-cart-title">
+                    Order Summary
+                </h1>
+                <div class="shopping-cart-price">
+                    <p class="subtotal-txt">Subtotal:<span class="subtotal-price">$60</span></p>
+                </div>
+                <div class="u-text-center">  
+                    <a class="btn checkout-btn">Checkout</a>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <div class="row">
+            <div class="col-1-of-2 footer-column">
+              <span class="footer-title">We're here to help</span>
+              <ul class="footer-links">
+                  <li class="footer-link"><a href="#">Customer service</a></li>
+                  <li class="footer-link"><a href="#">Track your order</a></li>
+                  <li class="footer-link"><a href="#">Returns</a></li>
+                  <li class="footer-link"><a href="#">Shipping information</a></li>
+              </ul>
+            </div>
+            <div class="col-1-of-2 footer-column">
+                <span class="footer-title">Contact us</span>
+                <ul class="footer-links">
+                    <li class="footer-link">412-000-0030</li>
+                    <li class="footer-link">567 N Craig St, Pittsburgh, PA, 15112</li>
+                    <li class="footer-link">greatpillow@fluff.com</li>
+                </ul>
+                <input type="email" placeholder="Enter your email" />
+            </div>
+        </div>
+    </footer>
+
+    <script src="addCart.js"></script>
+    
+</body>
+</html>

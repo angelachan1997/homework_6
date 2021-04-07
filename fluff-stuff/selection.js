@@ -1,5 +1,6 @@
 var boxes = document.getElementsByClassName("pd-selection-content");
 var titles = document.getElementsByClassName("pd-selection-title");
+var currentProductPrice = parseInt(document.querySelector(".pd-title-price").innerHTML.slice(1));
 
 for (let i = 0; i < titles.length; i++) {
     let title = titles[i];  
@@ -23,7 +24,7 @@ function add() {
     let count = parseInt(quantity.innerHTML),
         price = parseInt(priceDisplay.innerHTML);
     quantity.innerHTML = count + 1;
-    priceDisplay.innerHTML = price + 30;
+    priceDisplay.innerHTML = price + currentProductPrice;
 
 }
 
@@ -32,7 +33,7 @@ function minus() {
         price = parseInt(priceDisplay.innerHTML);
     if (count > 0) {
         quantity.innerHTML = count - 1;
-        priceDisplay.innerHTML = price - 30;
+        priceDisplay.innerHTML = price - currentProductPrice;
     }
 }
 
@@ -54,7 +55,7 @@ function selectionToggle(selected, options, category) {
     }
     selected.classList.add("active");
 
-    let colorDisplay = document.getElementById("seleted-color"),
+    let colorDisplay = document.getElementById("selected-color"),
         fillingDisplay = document.getElementById("selected-filling"),
         newSelection = selected.querySelector(".pds-option-name").innerHTML;
 
